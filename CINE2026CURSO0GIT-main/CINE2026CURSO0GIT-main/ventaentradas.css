@@ -34,7 +34,9 @@ table{
 }
 .cartel{
     background-color: lightblue;
+    display: flex;
     width: 100px;
+    height: 100px;
 }
 
 img{
