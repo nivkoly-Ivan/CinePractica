@@ -1,11 +1,12 @@
-var aPelis=new Array("Que bello es vivir","Solo en casa","Cuento de Navidad");
-var aLoc= new Array(50,120,60);
-var aSalas=new Array("1","2","3");
-//Almacenamos la localidades vendidas por sala: aVendidas1, aVendidas2 y aVendidas3
+var aPelis=new Array("Que bello es vivir","Solo en casa","Cuento de Navidad","Gladiator II");
+var aLoc= new Array(50,120,60,120);
+var aSalas=new Array("1","2","3","4");
+//Almacenamos la localidades vendidas por sala: aVendidas1, aVendidas2 y aVendidas3 añadiendo aVendidas4 para la sala 4
 //y las vendidas en la pelicula seleccionada en el array vendidas
 var aVendidas1= new Array();    
 var aVendidas2= new Array();
 var aVendidas3= new Array();
+var aVendidas4= new Array();
 var vendidas=new Array();   
 var asientos=new Array();  //los asientos vendidos en cada compra
 var numButacas=0;   //butacas disponibles en la sala seleccionada
@@ -32,6 +33,9 @@ function seleccionarPeli(){
         case "3":
             vendidas=aVendidas3.slice(0,aVendidas3.length);
             break;
+            case "4":
+            vendidas=aVendidas4.slice(0,aVendidas4.length);
+            break;
     }
     pintarButacas();    
 }
@@ -50,6 +54,11 @@ function pintarButacas(){
             if (i%15==0){
                 contenedor.innerHTML+="<br>";
             }
+        }
+        //Añadimos un mensaje de aviso si quedan pocas localidades disponibles y un mensaje de agotado si no quedan localidades
+        if (vendidas.length >= numButacas/2){
+        alert("Quedan pocas localidades disponibles, dese prisa con la reserva.")
+
         }
         if (numButacas==vendidas.length){
             contenedor.innerHTML+="<br><img  src='img/soldout.png' alt='Sin localidades'title='Localidades agotadas. Seleccione otra película.'>"
@@ -96,11 +105,14 @@ function confirmarVenta(){
             case "3":
                 aVendidas3=vendidas.slice(0,vendidas.length);
                 break;
+            case "4":
+                aVendidas4=vendidas.slice(0,vendidas.length);
+                break;
             }
         
         document.getElementById("contenedor").innerHTML="";
         imprimirTicket()
-
+            
     }  
     else{
         alert("No ha seccionado ninguna localidad")
