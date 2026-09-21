@@ -9,7 +9,7 @@ docker run -d -p 8081:80 nginx
 ````
 
 ## COGEMOS EL REPOSITORIO Y LO COLOCAMOS EN:
-### usr/share/nginx y encontraras la carpeta "html"
+### usr/share/nginx y encontraras la carpeta "html", puedes acceder a ella desde terminal con:
 ```bash
 cd usr
 cd share
