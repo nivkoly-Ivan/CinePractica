@@ -1,1 +1,21 @@
 ENTREGAR EL EN AULA VIRTUAL LOS DOS ALUMNOS EL ENLACE AL REPOSITORIO. DEBE SER PUBLICO
+#GUIA DE INSTALACUIÓN DEL CINE
+##DEBEMOS INSTALAR DOCKER Y ABRIR UN CONTAINER NGINX
+###Nosotros utilizamos el puerto 8081 porque ya tenemos en uso el 8080.
+###Este comando realizarlo en vuestra consola de comandos windows.
+
+''' bash
+docker run -d -p 8081:80 nginx
+'''
+
+##COGEMOS EL REPOSITORIO Y LO COLOCAMOS EN:
+'''bash
+cd usr
+cd share
+cd nginx
+'''
+##BORRAMOS LA CARPETA HTML, METEMOS NUESTRO REPOSITORIO Y CAMBIAMOS SU NOMBRE A html
+
+'''bash
+mv CinePractica html
+'''
