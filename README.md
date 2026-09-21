@@ -15,7 +15,7 @@ cd usr
 cd share
 cd nginx
 ```
-## BORRAMOS LA CARPETA "html", METEMOS NUESTRO REPOSITORIO Y CAMBIAMOS SU NOMBRE A "html"
+## BORRAMOS LA CARPETA "html", METEMOS NUESTRO REPOSITORIO Y CAMBIAMOS SU NOMBRE A "html" puedes cambiar el nombre del repositorio con este comando en la terminal:
 
 ```bash
 mv CinePractica html
