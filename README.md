@@ -1,5 +1,5 @@
 ENTREGAR EL EN AULA VIRTUAL LOS DOS ALUMNOS EL ENLACE AL REPOSITORIO. DEBE SER PUBLICO
-# GUIA DE INSTALACUIÓN DEL CINE
+# GUIA DE INSTALACIÓN DEL CINE
 ## DEBEMOS INSTALAR DOCKER Y ABRIR UN CONTAINER NGINX
 ### Nosotros utilizamos el puerto 8081 porque ya tenemos en uso el 8080.
 ### Este comando realizarlo en vuestra consola de comandos windows.
