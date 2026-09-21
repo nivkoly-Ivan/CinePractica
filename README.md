@@ -9,12 +9,13 @@ docker run -d -p 8081:80 nginx
 ````
 
 ## COGEMOS EL REPOSITORIO Y LO COLOCAMOS EN:
+### usr/share/nginx y encontraras la carpeta "html"
 ```bash
 cd usr
 cd share
 cd nginx
 ```
-## BORRAMOS LA CARPETA HTML, METEMOS NUESTRO REPOSITORIO Y CAMBIAMOS SU NOMBRE A html
+## BORRAMOS LA CARPETA "html", METEMOS NUESTRO REPOSITORIO Y CAMBIAMOS SU NOMBRE A "html"
 
 ```bash
 mv CinePractica html
